@@ -1,0 +1,31 @@
+docker run --rm \
+  --volume="/Users/siwei/fun/github/ForFun" \
+  --volume="$PWD/vendor/bundle:/usr/local/bundle" \
+  -it jekyll/jekyll:$JEKYLL_VERSION \
+  jekyll build
+
+
+
+
+docker run --rm \
+  --volume=/Users/siwei/fun/github/ForFun \
+  -p 35729:35729 -p 4000:4000 \
+  -it jekyll/jekyll:$JEKYLL_VERSION \
+  jekyll build
+
+
+
+  docker run --rm \
+  --volume="/Users/siwei/fun/github/ForFun" \
+  -it jekyll/builder:$JEKYLL_VERSION \
+  jekyll build
+
+
+  docker run --rm \
+  -p 4000:4000 \
+  -v /Users/siwei/fun/github/ForFun \
+   -it jekyll/jekyll:$JEKYLL_VERSION \
+  jekyll serve --host=0.0.0.0
+
+  dws_sc_sales_item_disti_1d
+
