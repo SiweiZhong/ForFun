@@ -6,6 +6,6 @@ this is for fun
 2. python
 3. sql
 
-```java
+```text
   hello world asdfa
 ```
